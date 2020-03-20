@@ -1,0 +1,46 @@
+<h1>Product-Manger</h1>
+<table class="table">
+    <thead class="thead-dark" >
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Desc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr >
+     
+        <th scope="row">1</th>
+        <td>  <p *ngIf="selected">{{selected.name}}</p> </td>
+        <td>  <p *ngIf="selected">{{selected.price}}</p> </td>
+        <td>  <p *ngIf="selected">{{selected.desc}}</p> </td>
+       
+      </tr>
+     
+    </tbody>
+  </table>
+<div class="row">
+    <!-- <app-product class="col-lg-4 col-md-6 mb-4"></app-product>
+    <app-product class="col-lg-4 col-md-6 mb-4"></app-product>
+    <app-product class="col-lg-4 col-md-6 mb-4"></app-product> -->
+    <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let product of products">
+    <div class="card h-100">
+    <a href="#"><img class="card-img-top" [src]="product.img" style="height: 200px; width: 200px;" alt=""></a>
+    <div class="card-body">
+        <h4 class="card-title">
+            <a href="#">{{product.name}}</a>
+        </h4>
+        <h5>${{product.price}}</h5>
+        <p class="card-text">{{product.desc}}</p>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" (click)="showDetail(product)">Detail</button>
+        <button type="button" class="btn btn-secondary"(click)="removeItem(product.id)">Delete</button>
+    
+      </div>
+  </div>
+    </div>
+   
+  
+</div>
