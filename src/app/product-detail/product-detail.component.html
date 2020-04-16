@@ -1,0 +1,21 @@
+<table class="table">
+    <thead class="thead-dark" >
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Desc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngIf="product">
+     
+        <th scope="row">1</th>
+        <td>   {{product.name}} </td>
+        <td>  {{product.price}} </td>
+        <td> {{product.desc}} </td>
+       
+      </tr>
+     
+    </tbody>
+  </table> 
