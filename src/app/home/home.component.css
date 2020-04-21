@@ -1,0 +1,20 @@
+.logo1 {
+      float: left;
+    position: relative;
+    padding: 30px 0;
+width: 100px 
+}
+.button1 {
+    background-color: #f3285b;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    color: #FFF;
+    padding: 0 5px;
+}
+.usermenu1 {
+    float: right;
+    padding-top: 15px;
+    
+    
+}
