@@ -16,10 +16,14 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { HomeComponent } from './home/home.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ServicesComponent } from './services/services.component';
+import { IndexAdminComponent } from './admin/index-admin/index-admin.component';
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { ProductsComponent } from './admin/products/products.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, CategoryComponent, ProductComponent, ProductListComponent, SlideComponent, AboutComponent, ProductAddComponent, ProductDeleteComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ServicesComponent ],
+  declarations: [ AppComponent, HelloComponent, CategoryComponent, ProductComponent, ProductListComponent, SlideComponent, AboutComponent, ProductAddComponent, ProductDeleteComponent, ProductDetailComponent, ProductManagerComponent, HomeComponent, ProductEditComponent, ServicesComponent, IndexAdminComponent, DashboardComponent, ProductsComponent, ContactComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
