@@ -1,0 +1,51 @@
+
+<nav>
+<ul class="bang">
+<li>	<a routerLink="/home" routerLinkActive="active" title="Trang chủ">Home
+						<span class="sr-only">(current)</span>
+					</a></li>
+<li><a href="#">Introduce</a></li>
+<li class="nav-item">
+					<a class="nav-link" routerLink="/manager" routerLinkActive="active" title="Trang quản  lí">Management page
+</a>
+
+	
+<li ><a href="#">Shopping Guide</a></li>
+<li class="nav-item">
+					<a class="nav-link" routerLink="/contact" routerLinkActive="active" title="Liên Hệ">Contact</a></li>
+</ul>
+
+</nav>
+<header class="d-flex mb-3 pt-5 justify-content-between">
+  <h2>Management page</h2>
+  <button class="btn btn-primary" routerLink="/product/add">Add Product</button>
+  
+</header>
+<table class="table table-bordered">
+  <thead>
+   <tr>
+      <th scope="col">id</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Ảnh</th>
+     
+
+      <th width="300" scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      
+      <td> {{product.id}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.price}}</td>
+      <td><img class="card-img-top" [src]="product.img" style="height: 100px; width: 100px; " alt=""></td>
+      <td>
+            <button class="btn btn-primary" routerLink="/product/{{product.id}}">Detail</button>
+            <button class="btn btn-info ml-3" routerLink="/product/edit/{{product.id}}">Edit</button>
+            <button class="btn btn-danger ml-3" >Delete</button>
+      </td>
+    </tr>
+  
+  </tbody>
+</table>

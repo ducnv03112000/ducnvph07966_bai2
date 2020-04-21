@@ -1,4 +1,8 @@
-<form>
+ 
+<h1 align="center"> Thêm Sản Phẩm </h1>
+<br> <br>
+<form style="margin-left:20px"> 
+  
     <div class="form-group">
       <label for="">Anh</label>
       <input type="url" class="form-control" name="img" [(ngModel)]="product.img">
@@ -13,5 +17,6 @@
       <label for="">desc</label>
       <input type="text" class="form-control" name="desc" [(ngModel)]="product.desc">
     </div>
-    <button class="btn btn-primary" (click)="addProduct()">Add Product</button>
+    <button class="btn btn-primary" (click)="addProduct()" >Add Product</button>
+  
   </form>
